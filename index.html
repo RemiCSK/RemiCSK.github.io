@@ -25,84 +25,327 @@
   </script>
 </head>
 
+
+
 <body>
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Anonymous Supplementary Material</h1>
-          <h1 class="title is-1 publication-title">for Fused-Planes</h1>
+          
+          <h1 class="title is-1 publication-title">
+            Aligning 3D-aware and Stable Diffusion Latent Spaces for Latent NeRFs
+          </h1>
+
+          <h2 style="font-size:1.8rem; font-weight:600;">
+            Internship Project — Rémi Calvet, Criteo AI Lab (2025)
+          </h2>
+
+          <br>
+
+          <!-- Authors -->
+          <div class="is-size-5 publication-authors">
+
+            <span class="author-block" style="font-weight:600;">
+              <a href="https://www.linkedin.com/in/remicalvet/" 
+                 target="_blank" rel="noopener noreferrer">Rémi Calvet</a>
+            </span>
+            <span style="opacity:0.7;">(Intern)</span>
+            <br><br>
+
+
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=0dObvuYAAAAJ&hl=fr" 
+                 target="_blank" rel="noopener noreferrer">Karim Kassab</a>
+              <sup>1,2</sup>
+              <span style="opacity:0.7;">(Supervisor)</span>,
+            </span>
+
+
+            <span class="author-block">
+              <a href="https://scholar.google.fr/citations?user=CcjdVBgAAAAJ&hl=fr" 
+                 target="_blank" rel="noopener noreferrer">Antoine Schnepf</a>
+              <sup>1,3</sup>
+              <span style="opacity:0.7;">(Supervisor)</span>,
+            </span>
+
+            
+
+            <span class="author-block">
+              <a href="https://jyfranceschi.fr/" 
+                 target="_blank" rel="noopener noreferrer">Jean-Yves Franceschi</a>
+              <sup>1</sup>
+              <span style="opacity:0.7;">(Supervisor)</span>
+            </span>
+
+          </div>
+
+          <br>
+
+          <!-- Affiliations -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1 </sup>Criteo AI Lab, Paris, France</span><br>
+            <span class="author-block"><sup>2 </sup>LASTIG, Université Gustave Eiffel, IGN-ENSG, Saint-Mandé</span><br>
+            <span class="author-block"><sup>3 </sup>Université Côte d'Azur, CNRS, I3S, France</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
           <div class="column has-text-centered">
             <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+  <a href="./static/pdfs/rapport-stage.pdf"
+     class="external-link button is-normal is-rounded is-dark" target="_blank" rel="noopener noreferrer">
+    <span class="icon">
+        <i class="fas fa-file-pdf"></i>
+    </span>
+    <span>Internship report</span>
+  </a>
+</span>
+             
+              <br>
+              <span class="link-block">
+                <a href="https://github.com/RemiCSK/E2D2/tree/full_e2d2"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              
             </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-<!-- ### -->
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2">Large-Scale Results</h2>
-        We provide below 1000 additional videos demonstrating our method's performance in large-scale settings.
-        <br>
-        Note: The videos might take a few seconds to load.
-        <br><br>
 
-        <video id="large-scale" autoplay muted loop playsinline webkit-playsinline height="100%">
-          <source src="./static/videos/concat_ios.mp4"
-                  type="video/mp4">
-        </video>
 
-        <br><br>
-        <h2 class="title is-2">Analysis of base planes</h2>
-        <h3 class="title is-3">Visualization of rendered base planes</h3>
-        We provide below videos showing the learned base planes for different scenes.
-        TODO add analysis from rebuttal.
-        <br><br>
-        <video id="large-scale" autoplay muted loop playsinline webkit-playsinline width="70%">
-          <source src="./static/videos/base_planes_videos/base_planes_faces_looped.mp4" type="video/mp4">
-        </video>
-        <video id="large-scale" autoplay muted loop playsinline webkit-playsinline width="70%">
-          <source src="./static/videos/base_planes_videos/base_planes_cars_trimmed_looped.mp4" type="video/mp4">
-        </video>
 
-        <h3 class="title is-3">Base planes weights values for two objects</h3>
-        We illustrate below the learned weights for the base planes corresponding to two different objects.
-        <br><br>
-        <img src="./static/videos/base_planes_videos/scene_specific_weights.svg" alt="Base planes weights for two cars" width="50%">
 
-        <br><br>
-        The weights above correspond to the following two cars:
-        <br><br>
-        <video id="large-scale" autoplay muted loop playsinline webkit-playsinline width="30%">
-          <source src="./static/videos/base_planes_videos/cars01_looped.mp4" type="video/mp4">
-        </video>
-        <br><br>
-        <h3 class="title is-3">Interpolating between two weights</h3>
-        We also provide the following animations illustrating base planes interpolated between different scenes.
-        <br><br>
-        <video id="large-scale" autoplay muted loop playsinline webkit-playsinline width="50%">
-          <source src="./static/videos/base_planes_videos/interp_planes_faces_looped.mp4" type="video/mp4">
-        </video>
 
-        <!-- <br><br><br><br><br><br><br><br><br><br>
-        <video id="large-scale" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/appended_videos/basel_faces.mp4"
-                  type="video/mp4">
-        </video>
+<!-- Front video -->
 
-        <video id="large-scale" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/appended_videos/shapenet_cars.mp4"
-                  type="video/mp4">
-        </video> -->
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <div class="content has-text-justified">
+        <div class="columns is-centered has-text-centered">
+          <video id="large-scale" autoplay muted loop playsinline width="65%">
+            <source src="./static/videos/normalized-latent-img-render.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+
+
+
+<!-- ABSTRACT -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          This internship explores how to connect 3D-aware representations with the latent space of Stable Diffusion in order to enable 3D-consistent image editing and generation. Neural Radiance Fields (NeRFs) can model 3D scenes from multi-view RGB images, while modern diffusion models, such as Stable Diffusion, excel at high-quality 2D image synthesis in latent spaces. However, these two families of models operate in incompatible domains. NeRFs rely on a 3D-aware latent structure, whereas the latent space of Stable Diffusion does not has a coherent 3D geometry. As a result, Stable Diffusion cannot be directly integrated into NeRF pipelines.
+
+The objective of this work is to bridge this gap by learning a bidirectional mapping between Stable Diffusion’s latent space and a geometrically coherent, 3D-aware latent space suitable for NeRFs. By aligning these representations, the project enables the use of powerful pretrained diffusion models in 3D computer vision tasks, making it possible to perform geometrically consistent 3D scene editing or generation directly through Stable Diffusion.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
 </section>
+
+
+
+<!-- Method. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+
+        We extend the pipeline of IG-AE and take inspiration from the refinement layers of ED-NeRF to
+propose a new pipeline named E2D2. Our model circumvents the impossibility to have both the
+desired properties in the same latent space by constructing one latent space for each property
+and, a way to go from one latent space to the other.
+
+        We propose a bidirectional mapping between the latent space of Stable Diffusion and a 3D-aware latent space. 
+        Once the E2 and D2 blocks are trained we can encode an RGB image into Stable Diffusion's latent space, 
+        map it to a 3D-aware latent space and map it back to Stable Diffusion and then to RGB.<br><br>
+        <!-- Latent NeRF Training Pipeline. -->
+        <h3 class="title is-4">Bidirectional mapping between latent spaces</h3>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/schema-bi-mapping.png" alt="Latent NeRF Training" width="75%"/>
+          </div>
+          <p>
+            <b>Bidirectional mapping.</b> 
+            The figure illustrates the mapping
+from Stable Diffusion’s latent space to a 3D-aware latent space via 𝐸2𝜙, and the reverse mapping
+via 𝐷2𝜓. 𝐸 and 𝐷 are respectively Stable Diffusion’s encoder and decoder.
+          </p>
+        </div>
+        <br/>
+
+
+
+
+<!-- METHOD E2D2 TRAINING -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        
+        
+        <!-- Latent NeRF Training Pipeline. -->
+        <h3 class="title is-4">E2D2 Training Pipeline</h3>
+        <div class="content has-text-justified">
+          We propose a .<br><br>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/e2d2-training-pipeline.png" alt="Latent NeRF Training" width="75%"/>
+          </div>
+          <p>
+            <b>E2D2 Training.</b> 
+            (a) The Autoencoder block in blue enforces the reconstruction of
+the RGB and latent images. (b) The 3D Regularisation block in red enforces the 3D awareness
+of E2’s latent space. The NeRF module contains one Tri-Plane per scene; in our experiments
+we train on 50 scenes, so this block contains 50 Tri-Planes.
+          </p>
+        </div>
+        <br/>
+
+
+
+
+
+<!-- Experiments. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments</h2>
+
+        We <br><br>
+        <!-- Latent NeRF Training Pipeline. -->
+        <h3 class="title is-4"> Non 3D-aware latent space of D2</h3>
+        The role of D2 is to map from a 3D-aware latent space to Stable Diffusion's latent space. We can see more flickering effects on the video with outputs of D2 than the one with the outputs of the Tri-Planes (NeRFs). This is encouraging since smoother videos are less prone to flickering so this shows that the latent space before passing through D2 is more 3D-aware. <br><br>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered">
+            
+          </p>
+        </div>
+        <br/>
+        
+
+        <div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <div class="content has-text-justified">
+        <div class="columns is-centered has-text-centered">
+          <video id="large-scale" autoplay muted loop playsinline width="65%">
+            <source src="./static/videos/d2-latent-img-render.mp4"
+                    type="video/mp4">
+          </video>
+          
+        </div>
+        We <br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <div class="content has-text-justified">
+        <div class="columns is-centered has-text-centered">
+          <video id="large-scale" autoplay muted loop playsinline width="65%">
+            <source src="./static/videos/normalized-latent-img-render.mp4"
+                    type="video/mp4">
+          </video>
+          
+        </div>
+        We <br><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- BibTex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @internshipreport{
+        e2d2,
+        title={{Aligning 3D-aware and Stable Diffusion Latent Spaces for Latent NeRFs}},
+        author={Rémi Calvet, Karim Kassab, Antoine Schnepf, Jean-Yves Franceschi},
+        year={2025},
+        type={Internship Report},
+        url={https://remicsk.github.io}
+      }
+    </code></pre>
+  </div>
+</section>
+
+
+
+<!-- Thanks -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website was built on top of the <a href="https://github.com/nerfies/nerfies.github.io">following template</a>, for which we thank the authors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/ Thanks -->
+
+
 
 </body>
 </html>
